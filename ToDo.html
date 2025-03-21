@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple JS Task</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f9fa;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+}
+
+#taskInput {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    font-size: 16px;
+    border: 1px solid #161515;
+    border-radius: 8px;
+}
+
+#addTaskBtn {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: auto;
+    min-width: 100px;
+}
+
+#addTaskBtn:hover {
+    background-color: #218838;
+}
+
+ol {
+    list-style-type: none;
+    padding: 0;
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+li {
+    background-color: white;
+    padding: 10px;
+    margin: 5px auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+li span {
+    flex-grow: 1;
+    text-align: start;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 10px;
+}
+
+.completeBtn,
+.deleteBtn {
+    min-width: 70px;
+    text-align: center;
+    font-size: 14px;
+    padding: 5px 8px;
+}
+
+.completeBtn {
+    background-color: rgb(33, 83, 246);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.deleteBtn {
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.deleteBtn:hover {
+    background-color: darkred;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        justify-content: flex-start;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    #taskInput {
+        width: 100%;
+    }
+
+    #addTaskBtn {
+        width: 100%;
+    }
+
+    ol {
+        width: 100%;
+    }
+
+    li {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .completeBtn,
+    .deleteBtn {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>To-Do List</h1>
+        <input type="text" id="taskInput" placeholder="Enter a task...">
+        <button id="addTaskBtn">Add Task</button>
+
+        <ol id="taskList"></ol>
+    </div>
+    <script src="ToDo.js"></script>
+</body>
+
+</html>
