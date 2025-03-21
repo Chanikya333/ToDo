@@ -1,7 +1,12 @@
 Title: To-Do List Web Application
+
 Description:
 This project is a simple yet efficient To-Do List web application built using core web technologies: HTML, CSS, and JavaScript. Designed with a clean, intuitive interface, this application helps users organize their daily tasks effortlessly.
+
 The application enables users to:
+Add Tasks: Users can create new tasks by entering them in a designated input field and clicking an "Add" button.
+Mark Completion: Tasks can be marked as completed, helping users track their progress visually.
+Delete Tasks: Users can remove tasks from the list once completed or no longer needed.
 
 Key Features:
 Responsive Design: The interface is designed to adapt seamlessly to screens of all sizes, ensuring usability on desktop, tablet, and mobile devices.
